@@ -1,0 +1,22 @@
+.header {
+    background: var(--color-gray-700);
+    padding: 76px 0;
+}
+.headerWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.headerLogo {
+    flex-shrink: 0;
+}
+.headerTitle {
+    font-weight: 900;
+    font-size: 40px;
+    color: var(--color-blue);
+    line-height: 1;
+    & span {
+        color: var(--color-purple-dark);
+    }
+}
