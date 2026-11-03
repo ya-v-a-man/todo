@@ -20,7 +20,7 @@ export default function App() {
   function toggleTodo(id) {
     setTodos((prevTodos) =>
       prevTodos.map((todo) =>
-        todo.id == id
+        todo.id === id
           ? {...todo, completed: !todo.completed}
           : todo
       )
