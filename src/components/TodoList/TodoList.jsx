@@ -2,7 +2,7 @@ import styles from "./TodoList.module.css";
 import listEmptyIcon from '../../assets/img/clipboard.png';
 import TodoItem from '../TodoItem/TodoItem';
 
-export default function TodoList({ todos, toggleTodo }) {
+export default function TodoList({ todos, toggleTodo, deleteTodo }) {
     if (todos.length === 0) {
         return <div className={styles.todoListEmpty}>
             <div className={styles.todoListEmptyIcon}>
@@ -25,6 +25,7 @@ export default function TodoList({ todos, toggleTodo }) {
                 text={todo.text}
                 completed={todo.completed}
                 toggleTodo={toggleTodo}
+                deleteTodo={deleteTodo}
             />
         ))}
     </ul>
